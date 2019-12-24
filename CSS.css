@@ -1,0 +1,10 @@
+.banner {
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  background-color: blue;
+  width: 70vw;  
+}
