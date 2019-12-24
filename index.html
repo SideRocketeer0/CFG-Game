@@ -1,14 +1,25 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="CSS.css">
-</head>
-<body>
-<div id="banner">
-<h1>Context-free grammar</h1>
-</div>
-<div id="body">
-<p class="p"></p>
-<div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+    <script language="javascript" src="libraries/tracery.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+  </head>
+  <body onload="setup()">
+    <div id="banner">
+      <h1>Context-free grammar</h1>
+    </div>
+    <div id="body">
+      <div id="welcome">
+        <p id="welcomeParagraph"></p>
+        <button style="float:right;" onclick="setup()">New Greeting</button>
+      </div>
+      <div class="paragraphs">
+        <p>next thing - explaining terminals on nonterminals</p>
+      </div>
+    <div>
+  </body>
 </html>
