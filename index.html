@@ -4,22 +4,53 @@
   <head>
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script language="javascript" type="text/javascript" src="script.js"></script>
+
     <script language="javascript" src="libraries/tracery.js"></script>
     <link rel="stylesheet" type="text/css" href="CSS.css">
   </head>
   <body onload="setup()">
     <div id="banner">
-      <h1>Context-free grammar</h1>
+      <h1 style="text-decoration: underline;">Context-free grammar</h1>
+      <h3>A Website of ramdomly generated text to help <a href="explain.html" style="color: white;">understand CFG</a></h3>
     </div>
     <div id="body">
-      <div id="welcome">
+      <div class="CFG">
+        <h3>Welcome Message:</h3>
         <p id="welcomeParagraph"></p>
         <button style="float:right;" onclick="setup()">New Greeting</button>
       </div>
       <div class="paragraphs">
-        <p>next thing - explaining terminals on nonterminals</p>
+        <h3>Assignment question - this is one question from my assignment</h3>
+        <p>
+          S → XA | BY<br>
+          X →  AS<br>
+          Y →  YB | AB<br>
+          A → a<br>
+          B → b<br>
+          (a) Give a word of length 4 that is in the lanuage of the grammar.<br>
+          (b) Give a word of length 4 over {a,b} that is not in the lanuage of the grammar.<br>
+          (c) Draw a parse tree for the word ababa with respect to the grammar.<br>
+          (d) Give the set of nullable nonterminals for the grammar.<br>
+          (e) Give FIRST(Y B) and FIRST(X B)<br>
+        </p>
       </div>
-    <div>
+      <div class="CFG">
+        <p id="assignment"></p>
+        <span style="float:left;">Click <a href="explain.html">here</a> for help on the questions</span>
+        <button style="float:right;" onclick="question()">Generate</button>
+      </div>
+      <div class="paragraphs">
+        <h3>my own - make algo more efficent</h3>
+        <p>This was done without a libary</p>
+      </div>
+      <div class="CFG">
+        <p id="last"></p>
+        <button style="float:right;" onclick="final()">Generate</button>
+      </div>
+      <div class="paragraphs" style="text-align:center;">
+        <h1>Goodbye!</h1>
+          <span style="float:right;">Visit SideRocketeer0 on github.  S</span>
+      </div>
+      <script language="javascript" type="text/javascript" src="script.js"></script>
   </body>
 </html>
